@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav>
+            <img class="logo" src="./img/cinema_logo.png" alt="">
+
+            <div class="form_input">
+                <input class="form" type="search" placeholder="Rechercher un film" id="search" value=""
+                    onKeyUp="searchPage()">
+            </div>
+
+            <button id="btnSort" class="btnSortStyle" onclick="sortItems()">A - Z</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Meilleures sorties
+        <br>de l'année
+        </h1>
+
+        <table id="table">
+            <tbody class="tBody" id="data-output">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
